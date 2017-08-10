@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function Check(f) {
+            var returnbool = false
+            var idcheck = /^[a-z0-9]{4,12}$/
+            var namecheck = /^[가-힣]{2,5}$/
+            var idcodecheck = /^[0-9]{6}-[0-9]{7}$/
+            var id = f.id;
+            var pw1 = f.pw1;
+            var pw2 = f.pw2;
+            var name = f.name;
+            var idcode = f.idcode;
+            var interest = f.interest;
+            var cl = f.cl;
+            returnbool =
+                idcheck.test(id.value) &&
+                (pw1.value && pw2.value && pw1.value == pw2.value) &&
+                namecheck.test(name.value) &&
+                idcodecheck.test(idcode.value) &&
+                cl.value.length
+            if (!idcheck.test(id.value)) {
+                alert('아이디를 제대로 입력하세요.')
+                id.value = ''
+                id.focus()
+            } else if (!(pw1.value && pw2.value && pw1.value == pw2.value)) {
+                alert('비밀번호를 제대로 입력하세요.')
+                pw1.focus()
+                pw1.value = ''
+                pw2.value = ''
+            } else if (!namecheck.test(name.value)) {
+                alert('이름을 제대로 입력하세요.')
+                name.focus()
+                name.value = ''
+            } else if (!idcodecheck.test(idcode.value)) {
+                alert('주민번호를 제대로 입력하세요.')
+                idcode.focus()
+                idcode.value = ''
+            }
+            return returnbool
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" method="get" onsubmit="return Check(this)">
+        <label for="id">아이디</label>
+        <input type="text" name="id" value="" id="id"><br>
+        <label for="pw1">비밀번호</label>
+        <input type="password" name="pw1" value="" id="pw1"><br>
+        <label for="pw2">비밀번호 확인</label>
+        <input type="password" name="pw2" value="" id="pw2"><br>
+        <label for="email">이메일</label>
+        <input type="email" name="email" value="" id="email" required><br>
+        <label for="name">이름</label>
+        <input type="text" name="name" value="" id="name"><br>
+        <label for="idcode">주민번호</label>
+        <input type="text" name="idcode" value="" id="idcode"><br>
+        <label for="bd">생일</label>
+        <input type="text" name="bd" value="" id="bd">년
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select name="" id="">
+            <option value=""> 1 </option>
+            <option value=""> 2 </option>
+            <option value=""> 3 </option>
+            <option value=""> 4 </option>
+            <option value=""> 5 </option>
+            <option value=""> 6 </option>
+            <option value=""> 7 </option>
+            <option value=""> 8 </option>
+            <option value=""> 9 </option>
+            <option value=""> 10 </option>
+            <option value=""> 11 </option>
+            <option value=""> 12 </option>
+            <option value=""> 13 </option>
+            <option value=""> 14 </option>
+            <option value=""> 15 </option>
+            <option value=""> 16 </option>
+            <option value=""> 17 </option>
+            <option value=""> 18 </option>
+            <option value=""> 19 </option>
+            <option value=""> 20 </option>
+            <option value=""> 21 </option>
+            <option value=""> 22 </option>
+            <option value=""> 23 </option>
+            <option value=""> 24 </option>
+            <option value=""> 25 </option>
+            <option value=""> 26 </option>
+            <option value=""> 27 </option>
+            <option value=""> 28 </option>
+            <option value=""> 29 </option>
+            <option value=""> 30 </option>
+            <option value=""> 31 </option>일
+        </select>
+        <br>
+        <label>관심분야</label>
+        <input type="checkbox" value="asf" name="interest">안보여<input type="checkbox" value="b" name="interest">안보여<input type="checkbox" value="d" name="interest">안보여<br>
+        <label for="cl">자기소개</label>
+        <textarea rows="1" cols="30" required id="cl" name="cl"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>

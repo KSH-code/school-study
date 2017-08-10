@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" name="f1" onchange="K()">
+        <h1>서적 주문 양식</h1>
+        <p>주문서</p>
+        <table>
+            <tr>
+                <th>책 제목</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+            </tr>
+            <tr>
+                <td>멀티미디어 배움터2.0</td>
+                <td>25,000원</td>
+                <td><input type="text" name="quantity_1"></td>
+                <td><input type="text" name="price_1"></td>원
+            </tr>
+            <tr>
+                <td>모바일 멀티미디어</td>
+                <td>17,000원</td>
+                <td><input type="text" name="quantity_2"></td>
+                <td><input type="text" name="price_2"></td>원
+            </tr>
+            <tr>
+                <td>모바일 멀티미디어</td>
+                <td>25,000원</td>
+                <td><input type="text" name="quantity_3"></td>
+                <td><input type="text" name="price_3"></td>원
+            </tr>
+            <tr>
+                <td>합계</td>
+                <td></td>
+                <td><input type="text" name="quantity_a"></td>
+                <td><input type="text" name="price_a"></td>원
+            </tr>
+        </table>
+    </form>
+    <script>
+        function K() {
+            var f = document.f1
+
+            f.price_1.value = 25000 * f.quantity_1.value
+            f.price_2.value = 17000 * f.quantity_2.value
+            f.price_3.value = 25000 * f.quantity_3.value
+            f.quantity_a.value = parseInt(f.quantity_1.value) + parseInt(f.quantity_2.value) + parseInt(f.quantity_3.value)
+            f.price_a.value = 25000 * f.quantity_1.value + 17000 * f.quantity_2.value + 25000 * f.quantity_3.value
+        }
+    </script>
+</body>
+
+</html>

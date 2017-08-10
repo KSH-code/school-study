@@ -1,0 +1,52 @@
+section>div {
+    display: inline-block;
+    width: 48%;
+}
+
+section>article {
+    width: 48%;
+    display: inline-block;
+    float: right;
+}
+
+section>article:last-child {
+    width: 100%;
+}
+
+section article>img:nth-child(2) {
+    float: right;
+}
+
+section article>div {
+    border-top: 1px solid #ccc;
+}
+
+section>div>article>div>div {
+    float: right;
+}
+
+section>div>article>div>div>p {
+    text-align: right;
+    font-size: 13px;
+}
+
+section>article:last-child>div {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section>article:last-child>div>div {
+    display: inline-block;
+    width: 32%;
+}
+
+section>article:last-child>div>div>img {
+    padding: 20px;
+    width: 100%;
+}
+
+section>article:last-child>div>div>p {
+    margin-top: -10px;
+    font-size: 12px;
+}

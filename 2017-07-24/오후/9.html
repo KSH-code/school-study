@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var d = ['스마트 보안', '스마트 디바이스', '스마트 콘탠츠', '게임 소프트']
+        document.write(d[0]);
+        document.write('<br>');
+        document.write(d[1]);
+        document.write('<br>');
+        document.write(d)
+        document.write('<br>');
+        d.sort();
+        d.pop();
+        d.push('인공지능');
+        document.write('<br>');
+        document.write('<br>');
+        for (var i = 0; i < d.length; i++) {
+            document.write(d[i]);
+            document.write('<br>');
+        }
+        d.reverse()
+        for (i in d) {
+            document.write(d[i]);
+            document.write('<br>');
+        }
+    </script>
+</body>
+
+</html>

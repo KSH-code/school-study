@@ -1,0 +1,47 @@
+section h5 {
+    border-bottom: 1px solid #ccc;
+}
+
+section table {
+    width: 100%;
+}
+
+section table caption>p:first-child {
+    float: left;
+}
+
+section table caption>p:last-child {
+    float: right;
+}
+
+section caption {
+    border-bottom: 1px solid #ccc;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #ccc;
+}
+
+td {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+section>p:first-of-type {
+    text-align: center;
+}
+
+section>p:last-of-type {
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+}
+
+section * {
+    vertical-align: middle;
+}

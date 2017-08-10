@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="ChangeColor()"></button>
+    <script>
+        var i = 0
+        var color = ['yellow', 'black', 'white', 'grey']
+
+        function ChangeColor() {
+            var c = Math.floor(Math.random() * color.length);
+            if (i != c) {
+                document.body.style.backgroundColor = color[c]
+                i = c
+            } else
+                ChangeColor();
+        }
+    </script>
+</body>
+
+</html>

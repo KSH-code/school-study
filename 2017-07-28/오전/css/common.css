@@ -1,0 +1,49 @@
+* {
+    list-style-type: none;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+
+aside {
+    width: 170px;
+    position: relative;
+    float: left;
+}
+
+section {
+    position: relative;
+    float: right;
+    width: 777px;
+}
+
+section>img:first-child {
+    width: 100%;
+}
+
+aside>div {
+    margin-top: 20px;
+}
+
+aside>div>img {
+    width: 100%;
+}
+
+aside>div:last-child {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

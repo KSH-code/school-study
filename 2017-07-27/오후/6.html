@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script/jquery-3.2.1.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 2000px;
+            background-color: black;
+        }
+        
+        .bb {
+            display: none;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aa">d</div>
+    <div class="bb">d</div>
+    <script>
+        $('div').eq(0).click(() => {
+            $('div').eq(0).fadeOut()
+            $('div').eq(1).fadeIn()
+        })
+    </script>
+</body>
+
+</html>

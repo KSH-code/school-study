@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="script/jquery-3.2.1.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <style>
+        p {
+            background-color: red;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>d</p>
+    </div>
+    <script>
+        $('p').stop().animate({
+            'height': '1000px'
+        }, 20000, 'easeOutBack');
+    </script>
+</body>
+
+</html>

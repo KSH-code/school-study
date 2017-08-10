@@ -1,0 +1,9 @@
+main {
+    clear: both;
+    width: 100%;
+    background-color: #00a8ab;
+}
+
+main>img {
+    margin: 0 20px;
+}

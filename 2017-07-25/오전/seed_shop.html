@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        h1 {
+            margin: 10px;
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 6px;
+        }
+
+        div>div {
+            clear: both;
+            padding: 20px;
+            margin: 10px;
+            border-bottom: 1px solid #ccc;
+            width: 800px;
+            min-height: 150px;
+        }
+
+        div>div>* {
+            float: left;
+        }
+
+        div>div>p {
+            padding: 0;
+            margin: 0;
+        }
+
+        div>div>p:nth-child(2) {
+            width: 300px;
+            margin-right: 30px;
+        }
+
+        div>div>p:nth-child(3) {
+            width: 90px;
+            margin-right: 50px;
+            color: red !important;
+            font-weight: bold;
+        }
+
+        div>div>p:nth-child(3)>span {
+            font-size: 0.8em;
+            font-weight: normal;
+        }
+
+        div>div>p:nth-child(4) {
+            width: 70px;
+            margin-right: 30px;
+        }
+
+        * {
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>씨앗 판매</h1>
+    <div>
+        <div>
+            <img src="img/kyumkekook.jpg" alt="">
+            <p>[봄빛정원] 금계국/취미/선물/야생화</p>
+            <p>3,000원<br><span>배송비 2,500원</span></p>
+            <p>봄빛정원</p>
+            <p>조회 300</p>
+        </div>
+        <div>
+            <img src="img/cosmos.jpg" alt="">
+            <p>[봄빛정원] 코스모스/취미/선물/야생화</p>
+            <p>2,000원<br><span>배송비 2,500원</span></p>
+            <p>봄빛정원</p>
+            <p>조회 300</p>
+        </div>
+    </div>
+</body>
+
+</html>

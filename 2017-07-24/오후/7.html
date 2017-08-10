@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <script>
+            document.write('<caption>책 주문 입력 내용</catpion>')
+            document.write('<tr><th>번호</th><th>제목</th></tr>')
+            var book = ['멀티미디어 배움터2.0', '모바일 멀티미디어', '자바입문: 이론과 실습']
+            var order_list = '';
+            var n = prompt('주문할 책 수량을 입력하세요.', '1')
+            var book_list = ` ${book[0]} \n ${book[1]} \n ${book[2]}`
+            for (var i = 0; i < n; i++) {
+                var choice = prompt(`책 번호를 선택하세요\n${book_list}`, '1')
+                title = ''
+                if (choice >= 1 && choice <= 3)
+                    title = book[choice - 1]
+                else {
+                    alert('리스트에 없는 책 선택')
+                }
+                document.write('<tr>')
+                document.write(`<td>${i + 1}</td>`)
+                document.write(`<td>${title}</td>`)
+                document.write('<tr>')
+                order_list += `\n${title} `
+            }
+            document.write(order_list)
+        </script>
+    </table>
+</body>
+
+</html>

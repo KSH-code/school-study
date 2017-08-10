@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script/jquery-3.2.1.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <style>
+        body {
+            height: 3000px;
+        }
+        
+        p {
+            font-size: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        ul li {
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #888;
+            margin: 50px;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            transition: all 1s;
+        }
+        
+        .on {
+            background-color: red;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <p></p>
+    <ul>
+        <li>클래스 추가하기</li>
+        <li>클래스 제거하기</li>
+    </ul>
+    <div></div>
+    <script>
+        $('li').eq(0).click(() => {
+            $('div').addClass('on')
+        })
+        $('li').eq(1).click(() => {
+            $('div').removeClass('on')
+        })
+        $(window).scroll(() => {
+            var ab = $(this).scrollTop()
+            $('p').text(ab)
+        })
+    </script>
+</body>
+
+</html>

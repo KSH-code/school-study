@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="script/jquery-3.2.1.js"></script>
+    <script src="script/jquery-ui.min.js"></script>
+    <style>
+        div {
+            width: 100px;
+            height: 2000px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hh">d</div>
+    <script>
+        $('div').mouseenter(() => {
+            $('div').animate({
+                width: '1000px'
+            }, 500, 'easeOutBounce')
+        })
+    </script>
+</body>
+
+</html>

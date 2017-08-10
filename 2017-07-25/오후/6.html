@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add() {
+            document.forms['h']['result'].value = parseInt(document.forms['h']['a'].value) + parseInt(document.forms['h']['b'].value)
+        }
+    </script>
+    <form name="h">
+        <input type="text" name="a"> +
+        <input type="text" name="b">
+        <input type="button" value="=" onclick="add()">
+        <input type="text" name="result">
+    </form>
+</body>
+
+</html>

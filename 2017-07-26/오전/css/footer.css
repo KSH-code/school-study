@@ -1,0 +1,26 @@
+footer {
+    width: 100%;
+    padding: 10px;
+    border-top: 2px solid #00a8ab;
+}
+
+footer>.fl {
+    font-size: 12px;
+}
+
+footer>.fl span {
+    margin: 5px;
+}
+
+footer h2 {
+    color: #1166bb;
+    font-size: 1.3em;
+}
+
+footer select {
+    width: 100px;
+}
+
+footer>.fr {
+    text-align: right;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <form action="simple_process.php" method="post">
+            <tr>
+                <td>메시지를 표시합니다.</td>
+                <td><input type="hidden" name="p" value="select"><input type="submit"></td>
+            </tr>
+        </form>
+        <form action="simple_process.php" method="post">
+            <tr>
+                <td>이름 입력<input type="text" name="name"></td>
+                <td>메시지 입력<input type="text" name="message"></td>
+                <td><input type="hidden" name="p" value="insert"><input type="submit"></td>
+            </tr>
+        </form>
+        <form action="simple_process.php" method="post">
+            <tr>
+                <td>삭제 번호 입력</td>
+                <td><input type="hidden" name="p" value="delete"><input type="text" name="idx"><input type="submit"></td>
+            </tr>
+        </form>
+        <form action="simple_process.php" method="post">
+            <tr>
+                <td>검색 키워드 입력</td>
+                <td><input type="hidden" name="p" value="search"><input type="text" name="keyword"><input type="submit"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+
+</html>

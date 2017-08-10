@@ -1,0 +1,29 @@
+.top {
+    width: 100%;
+    background-color: #efefef;
+    border-top: 1px solid black;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.top>span:last-of-type {
+    float: right;
+}
+
+.mid {
+    padding: 10px;
+}
+
+.bot {
+    width: 100%;
+    background-color: #efefef;
+}
+
+.bot>img {
+    vertical-align: top;
+}
+
+.b_r {
+    margin-top: 30px;
+    float: right;
+}

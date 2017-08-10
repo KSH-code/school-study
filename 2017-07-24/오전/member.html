@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: #888;
+            font-size: 12px;
+            margin: 5px;
+            vertical-align: middle;
+        }
+        form{
+            width: 700px;
+            margin: 50px auto 0 auto;
+        }
+        tr > td:first-child{
+            width: 100px;
+            text-align: right;
+            padding-right: 10px;
+        }
+        select,input[type=text],input[type=email],input[type=password]{
+            width: 80px;
+            border: 1px solid #ccc;
+        }
+        input[type=number]{
+            width: 50px;
+            border: 1px solid #ccc;
+        }
+        .중복확인{
+            height: 18px;
+        }
+        table{
+            border-collapse: collapse;
+            border: 0;
+            margin-bottom: 10px;
+            padding-top: 10px;
+            border-top: 1px solid blue;
+        }
+        tr{
+            height: 40px;
+            border-color: #ccc;
+        }
+        td{
+            border-left: 0;
+            border-right: 0;
+        }
+        div{
+            padding-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <img src="img/join_title.gif" alt="">
+        <table border="1">
+            <tr>
+                <td><img src="img/txt_id.gif" alt=""></td>
+                <td><input type="text"><img src="img/chk_id.gif" alt="" class="중복확인">영문, 숫자 조합으로 4~12자 이내</td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_pw.gif" alt=""></td>
+                <td><input type="password">영문, 숫자 조합으로 4~12자 이내</td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_pw2.gif" alt=""></td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_name2.gif" alt=""></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_birthday.gif" alt=""></td>
+                <td><input type="number" min="1900">년&nbsp;<input type="number" min="1" max="12">월&nbsp;<input type="number" min="1" max="31">일 <input type="radio" name="month">음력 <input type="radio" name="month">양력</td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_email.gif" alt=""></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_hp.gif" alt=""></td>
+                <td><input type="text"> - <input type="text"> - <input type="text"></td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_job.gif" alt=""></td>
+                <td><select name="job" id=""><option value="직업선택">직업선택</option>
+                <option value="대통령">대통령</option>
+                <option value="국회의원">국회의원</option></select></td>
+            </tr>
+            <tr>
+                <td><img src="img/txt_target.gif" alt=""></td>
+                <td><input type="checkbox">시험대비<input type="checkbox">업무상<input type="checkbox">취미<input type="checkbox">기타</td>
+            </tr>
+        </table>
+        <div>
+            <input type="image" value="reset" src="img/btn_cancel.gif">
+            <input type="image" value="submit" src="img/btn_ok.gif">
+        </div>
+    </form>
+</body>
+</html>

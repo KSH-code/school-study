@@ -1,0 +1,35 @@
+* {
+    list-style-type: none;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    width: 100%;
+    clear: both;
+    position: relative;
+}
+
+aside {
+    width: 170px;
+    position: relative;
+    float: left;
+}
+
+section {
+    float: right;
+    width: 777px;
+}
+
+section>img:first-child {
+    width: 100%;
+}

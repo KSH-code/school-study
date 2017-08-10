@@ -1,0 +1,34 @@
+header>p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 8px;
+}
+
+header>p>span {
+    margin: 10px;
+}
+
+header>ul {
+    background-image: url('../img/main_menu_bg.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-bottom: 30px;
+    margin-left: 21px;
+    display: inline-block;
+    background-size: contain;
+}
+
+header>ul>li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 151px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    text-align: center;
+}
+
+header>ul>li>a {
+    color: white;
+}

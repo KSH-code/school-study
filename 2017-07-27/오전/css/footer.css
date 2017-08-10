@@ -1,0 +1,25 @@
+footer {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+footer>div {
+    width: 500px;
+    margin: 0 auto;
+}
+
+footer>div>img {
+    float: left;
+}
+
+footer>div>p {
+    display: inline-block;
+    line-height: 25px;
+    margin-left: 50px;
+    font-size: 10px;
+}
+
+footer>img {
+    margin: 3px;
+    float: right;
+}

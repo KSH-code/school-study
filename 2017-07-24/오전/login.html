@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #wrap{
+            width: 600px;
+            margin: 100px;
+        }
+        h2{
+            width: 100%;
+            border: 4px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #wrap > div{
+            box-sizing: border-box;
+            margin-top: 100px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 50px;
+        }
+        .l{
+            float: left;
+        }
+        .r{
+            float: right;
+        }
+        label{
+            display: inline-block;
+            min-width: 70px;
+            text-align: left;
+        }
+        form{
+            margin-top: 30px;
+        }
+        input[type=text],input[type=password]{
+            width: 120px;
+        }
+        .input{
+            width: 250px;
+        }
+        .cb{
+            clear: both;
+        }
+         .cb > div{
+            padding-left: 30px;
+        } 
+        ul > li{
+            font-size: 10px;
+        }
+        ul{
+            margin-left: -20px;
+        }
+        .r > .r{
+            margin-left: -40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>로그인</h2>
+        <div>
+            <img src="img/login_img.gif" alt="">
+            <br>
+            <img src="img/login_img02.gif" alt="">
+            <form class="r">
+                <div class="l">
+                    <div class="input">
+                        <label for="id">아 이 디</label>
+                        <input type="text" id="id">
+                        <br>
+                        <label for="pwd">비밀번호</label>
+                        <input type="text" id="pwd">
+                    </div>
+                </div>
+                <div class="r">
+                    <img src="img/btn_login.gif" alt="">
+                </div>
+                <div class="cb">
+                    <div><input type="checkbox" id="checkbox"><label for="checkbox">자동 로그인</label></div>
+                    <ul>
+                        <li>아직 회원이 아니세요?</li>
+                        <li>아이디 또는 비밀번호를 잊으셨나요?</li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="title">웹표준</h1>
+    <div id="box">
+        <p>내용1</p>
+        <p>내용2</p>
+        <p>내용3</p>
+        <p>내용4</p>
+    </div>
+    <script>
+        document.getElementById('title').style.color = 'blue';
+        [...document.getElementsByTagName('p')].forEach((e) => {
+            e.style.color = 'red'
+        })
+    </script>
+</body>
+
+</html>

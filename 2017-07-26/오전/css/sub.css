@@ -1,0 +1,50 @@
+section {
+    width: 100%;
+}
+
+section aside ul {
+    margin: 20px 0;
+    width: 90%;
+    border-top: 3px solid #00a8ab;
+    border-bottom: 3px solid #ccc;
+}
+
+section aside img:last-child {
+    margin-top: 50px;
+    width: 90%;
+}
+
+section aside img:first-child {
+    margin-top: 10px;
+}
+
+section aside a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+section aside a:hover,
+section aside a:hover>span {
+    background-color: #00a8ab;
+    color: white;
+}
+
+section aside span {
+    float: right;
+}
+
+section article h5 {
+    display: inline-block;
+}
+
+section article>div {
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 2px solid #00a8ab;
+}
+
+section article li {
+    margin-left: 20px;
+    list-style-type: circle;
+}

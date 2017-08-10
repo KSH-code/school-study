@@ -1,0 +1,39 @@
+section {
+    width: 100%;
+}
+
+section>div {
+    width: 31%;
+    padding: 10px;
+}
+
+.notice {
+    font-size: 12px;
+}
+
+.notice p>span {
+    float: right;
+}
+
+section .bottom {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding: 20px;
+}
+
+section .bottom>div {
+    min-width: 13%;
+    display: inline-block;
+    text-align: left;
+    padding: 0 10px;
+    vertical-align: top;
+}
+
+section .bottom h2 {
+    color: #1166bb;
+    font-size: 1.2em;
+}
+
+section .bottom p {
+    font-size: 0.8em;
+}
